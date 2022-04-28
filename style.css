@@ -1,0 +1,59 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+  .header {
+    width: 100%;
+    height: 0.4vw;
+    top: 0;
+    left: 0;
+    padding: 2vw;
+    position: fixed;
+    z-index: 9;
+}
+
+.header > a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.header > a :hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+  /* -------------------- */
+
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Pretendard";
+    background-color: #F9F9F9;
+}
+
+.download {
+    margin-top: 3vw;
+    margin-left: 80%;
+}
+
+.download > a {
+    text-decoration: underline;
+    text-underline-position: under;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #f0b8bd;
+}
+
+.download:hover {
+    opacity: 60%;
+    transition: 0.2s ease-in-out;
+}
+
+.resume-img {
+    /* box-shadow: 4px 4px 4px 4px rgb(219, 219, 219); */
+    margin: auto;
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
+}
