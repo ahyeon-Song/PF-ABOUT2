@@ -1,56 +1,149 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-  .header {
+.header {
     width: 100%;
     height: auto;
     top: 0;
     left: 0;
     padding: 2vw;
     position: fixed;
+}
+
+.header>a {
+    font-size: 3.7vw;
+    margin-left: 3vw;
+    text-decoration: none;
+    color: black;
     z-index: 9;
 }
 
-.header > a {
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
+.header>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.header > a :hover {
-    cursor: pointer;
-    opacity: 60%;
-}
-  /* -------------------- */
+/* -------------------- */
 body {
     width: 100%;
     overflow-x: hidden;
     font-family: "Pretendard";
-    background-color: #f1f1f1;
+    background-color: rgb(238, 238, 238);
+    -webkit-animation: fadein 2.5s;
 }
 
-.download {
-    margin-top: 3vw;
-    margin-left: 80%;
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.download > a {
-    text-decoration: underline;
-    text-underline-position: under;
-    font-size: 1vw;
-    font-weight: 400;
-    color: #f0b8bd;
+body::-webkit-scrollbar {
+    width: 0.6vw;
+    /* 스크롤바의 너비 */
 }
 
-.download:hover {
+body::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: #5666af;
+    /* 스크롤바의 색상 */
+
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+.download>a {
+    margin-left: 87%;
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #000000;
+}
+
+.download>a:hover {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    z-index: 10;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
     opacity: 60%;
-    transition: 0.2s ease-in-out;
 }
 
 .resume-img {
-    /* box-shadow: 4px 4px 4px 4px rgb(219, 219, 219); */
     margin: auto;
     text-align: center;
-    margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+    image-rendering: optimizeQuality;
 }
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
