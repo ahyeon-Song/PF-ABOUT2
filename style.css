@@ -60,13 +60,23 @@ body::-webkit-scrollbar-track {
     /*스크롤바 뒷 배경 색상*/
 }
 
+.download {
+  margin-top: -6.5vw;
+  position: fixed;
+  display: flex;
+  margin-left: 90vw;
+}
+
 .download>a {
-    margin-left: 87%;
-    position: fixed;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    text-align: center;
     font-weight: 600;
     color: #000000;
+}
+
+resume-icon {
+  font-size: 2vw;
 }
 
 .download>a:hover {
@@ -146,4 +156,57 @@ body::-webkit-scrollbar-track {
               transform: scale3d(1, 1, 1);
     }
   }
-  
+
+  .about-wrap {
+    width: 95%;
+    display: flex;
+    margin-bottom: 5vw;
+  }
+
+  .about-info {
+    width: 30%;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  copy-right {
+    font-size: 0.8vw;
+    color: rgb(81, 81, 81);
+  }
+
+  .about {
+    width: 35%;
+    height: auto;
+    font-size: 1vw;
+    margin-top: 4vw;
+    line-height: 1.3vw;
+    margin-left: 5vw;
+  }
+
+  about-name {
+    text-decoration: underline;
+    background-color: aquamarine;
+  }
+
+  .experience {
+    width: 100%;
+    font-size: 0.9vw;
+    margin-left: 5vw;
+    line-height: 1.8vw;
+    margin-top: 5vw;
+  }
+  experience-h, interview-h {
+    font-size: 1.2vw;
+    text-decoration: underline;
+  }
+
+  .interview{
+    width: 38%;
+    font-size: 0.9vw;
+    margin-top: 5vw;
+    line-height: 1.5vw;
+    margin-top: 5vw;
+    margin-left: -50vw;
+  }
