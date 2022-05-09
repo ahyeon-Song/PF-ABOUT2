@@ -157,6 +157,10 @@ resume-icon {
     }
   }
 
+ .space {
+    height: 2vw;
+  }
+
   .about-wrap {
     width: 95%;
     display: flex;
