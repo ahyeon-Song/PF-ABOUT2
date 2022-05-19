@@ -10,10 +10,10 @@
 }
 
 .header>a {
-    font-size: 3.7vw;
+    font-size: 2vw;
     margin-left: 3vw;
     text-decoration: none;
-    color: black;
+    color: rgb(102, 207, 172);
     z-index: 9;
 }
 
@@ -61,7 +61,7 @@ body::-webkit-scrollbar-track {
 }
 
 .download {
-  margin-top: -6.5vw;
+  margin-top: -8vw;
   position: fixed;
   display: flex;
   margin-left: 90vw;
@@ -69,7 +69,7 @@ body::-webkit-scrollbar-track {
 
 .download>a {
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 0.8vw;
     text-align: center;
     font-weight: 600;
     color: #000000;
@@ -157,10 +157,9 @@ resume-icon {
     }
   }
 
- .space {
+  .space {
     height: 2vw;
   }
-
   .about-wrap {
     width: 95%;
     display: flex;
